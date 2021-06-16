@@ -1,0 +1,16 @@
+package lab2;
+
+public class Starsw {
+	public static void main (String args[]){
+		int i=0;
+		while(i<=5)
+			{
+			for(int m=5;m >i;m--)
+		     	System.out.print('*');
+		     	System.out.println();
+		     	i++;
+		    }
+		}	
+	
+
+}

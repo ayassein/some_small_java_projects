@@ -1,0 +1,38 @@
+import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+
+public class Test extends JFrame implements ActionListener 
+{
+	JLabel l;
+	JButton b;
+	public Test(){
+		super("Change");
+		this.setSize(500,200);
+		this.setVisible(true);
+		b=new JButton("Change");
+		l=new JLabel("Ahmed");
+		this.setLayout(new FlowLayout());
+		add(b);add(l);
+		b.addActionListener(this);
+
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new Test();
+
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		l.setText("Fix");
+	}
+
+}

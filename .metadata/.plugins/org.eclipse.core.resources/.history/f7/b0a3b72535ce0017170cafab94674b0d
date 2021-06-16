@@ -1,0 +1,26 @@
+package thread1;
+
+public class ClassTestSynchronized {
+	 
+    public static void main(String[] args) {
+        Car c=new Car();
+        c.print();
+        MyThread t1=new MyThread(c,1);
+        t1.start();
+         
+        MyThread t2 = new MyThread(c,-1);
+        t2.start();
+         
+         
+        try{
+            t1.join();
+            t2.join();
+//          Thread.sleep(1000);
+        }catch(Exception e){System.out.println("error");}
+         
+        c.print();
+    }
+ 
+
+
+}

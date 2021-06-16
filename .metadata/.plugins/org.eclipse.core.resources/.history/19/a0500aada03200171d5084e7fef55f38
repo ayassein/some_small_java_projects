@@ -1,0 +1,11 @@
+package hj;
+import java.util.Scanner;
+public class Array15 {
+	public static void main(String []args){
+		int a;
+	Scanner sc= new Scanner(System.in);
+	System.out.print("Enter num");
+	a=sc.nextInt();
+	System.out.println(a*2+ " " +a/2);
+	
+}}

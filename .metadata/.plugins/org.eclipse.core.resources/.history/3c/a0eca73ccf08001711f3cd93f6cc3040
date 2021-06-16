@@ -1,0 +1,16 @@
+package lab2;
+
+public class Stars {
+	public static void main ( String args[]){
+		
+		for( int i=0;i<5;i++){
+		
+		for(int m=0;m<5;m++){
+		System.out.print("*");
+		
+		}
+	
+		
+	System.out.println( );
+	}}
+}
